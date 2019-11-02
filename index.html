@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .off{
+        display:none;
+    }
+    .on{
+        display:block;
+    }
+    </style>
+</head>
+<body>
+    <!-- options -->
+    <select onchange="opton(this);"  >
+        <option id="sphere" value="sphere">sphere</option>
+        <option id="circle" value="circle">circle</option>
+        <option id="square" value="square">square</option>
+    </select>
+    <!-- input -->
+    <input type="number" name="radius" id="radius" class="off">
+    <input type="number" name="length" id="length"class="off">
+    <input type="number" name="height" id="height" class="off">
+    <input type="number" name="height" id="width" class="off">
+    <!-- Radio Button -->
+    <input type="radio" name="choice" id="volume" value="volume"> Volume
+    <input type="radio" name="choice" id="area" value="area"> Surface Area
+
+    <!-- buttons -->
+    <button role="button" id="submit1"  class="off">sphere</button>
+    <button role="button" id="submit2" class="off">circle</button>
+    <button role="button" id="submit3"  class="off">square</button>
+    <label id="result"></label>
+</body>
+<script src="index.js"></script>
+</html>
